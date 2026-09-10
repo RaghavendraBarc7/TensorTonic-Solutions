@@ -85,11 +85,13 @@ This is the Euclidean norm, the most common way to measure vector magnitude.
 One of the most useful applications of the dot product is projection. The projection of $x$ onto $y$ tells you "how much of $x$ points in the direction of $y$."
 
 **Scalar projection** (length of the shadow):
+
 $$
 \text{comp}_y x = \frac{x \cdot y}{||y||}
 $$
 
 **Vector projection** (the actual vector in the direction of $y$):
+
 $$
 \text{proj}_y x = \frac{x \cdot y}{||y||^2} y = \frac{x \cdot y}{y \cdot y} y = \text{comp}_y x \cdot \frac{y}{||y||}
 $$
@@ -125,6 +127,7 @@ Each neuron computes a weighted sum of its inputs: $z = w^T x + b$. This is a do
 **Cosine similarity:**
 
 To compare two vectors while ignoring their magnitudes, normalize them first:
+
 $$
 \text{cosine similarity} = \frac{x \cdot y}{||x|| \cdot ||y||}
 $$
@@ -134,6 +137,7 @@ This is the cosine of the angle between them. It is 1 for identical directions, 
 **Attention mechanisms:**
 
 In transformers, attention scores are computed using dot products between query and key vectors:
+
 $$
 \text{score}(q, k) = q^T k
 $$
@@ -145,21 +149,25 @@ This measures how relevant each key is to the query.
 ## Properties of the Dot Product
 
 **Commutative:**
+
 $$
 x \cdot y = y \cdot x
 $$
 
 **Distributive:**
+
 $$
 x \cdot (y + z) = x \cdot y + x \cdot z
 $$
 
 **Scalar multiplication:**
+
 $$
 (cx) \cdot y = c(x \cdot y) = x \cdot (cy)
 $$
 
 **Non-negative self-dot:**
+
 $$
 x \cdot x \geq 0
 $$
