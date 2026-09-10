@@ -45,8 +45,8 @@ This identity is powerful in practice. When vectors are pre-normalized ($\|x\| =
 | Metric | Formula | Geometry |
 |--------|---------|----------|
 | Euclidean (L2) | $\sqrt{\sum (x_i - y_i)^2}$ | Straight line |
-| Manhattan (L1) | $\sum |x_i - y_i|$ | Grid/city-block path |
-| Chebyshev (L-inf) | $\max_i |x_i - y_i|$ | Maximum single-axis gap |
+| Manhattan (L1) | $\sum \lvert x_i - y_i \rvert$ | Grid/city-block path |
+| Chebyshev (L-inf) | $\max_i \lvert x_i - y_i \rvert$ | Maximum single-axis gap |
 | Cosine distance | $1 - \cos\theta$ | Angular separation |
 
 Euclidean distance is sensitive to magnitude, while cosine distance only cares about direction. Manhattan distance is more robust to outliers in individual dimensions. The right choice depends on your problem structure and data characteristics.
